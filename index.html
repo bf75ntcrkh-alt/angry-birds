@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Pássaro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Angry birds</h1>
+<div class="painel">
+    <div class="controle">
+
+        <label for="velocidade">Velocidade (m/s):</label>
+        <input type="number" id="velocidade" value="25"
+        min="1",max="50">
+    </div>
+
+        <div class="controle">
+            <label for="angulo">Ângulo(˚)</label>
+            <input type="number" id="angulo" value="45" min="0" max="90">
+        </div>
+ <button onclick="lancar()">Lançar</button>
+    </div>
+    <canvas
+        id="campo"
+        width="1000"
+        height="500">
+    </canvas>
+<div class="informacoes">
+<h2>Fórmulas utilizadas</h2>
+<p><strong>Velocidade Horizontal:</strong> Vx=Vo*sen(θ)</p>
+<p><strong>Velocidade Vertical:</strong> Vx=Vo*cos(θ)</p>
+<p><strong>Movimento Horizontal:</strong> x=Vx*tempo</p>
+<p><strong>Movimento Vertical:</strong> y=Vyt-(gt²)/2</p>
+<p><strong>Gravidade:</strong> g≈9,8m/s²</p>
+
+
+</div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
